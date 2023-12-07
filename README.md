@@ -1,3 +1,8 @@
+This script will now use the AWS credentials file located at /home/ejev/.aws/credentials. It iterates through all AWS regions, 
+
+listing public IPs associated with Elastic IPs and EC2 instances, and writes them to separate CSV files for each region. 
+
+Ensure that the AWS credentials stored in this file have the necessary permissions to access the required AWS resources.
 
 # Required Software
 
