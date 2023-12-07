@@ -33,7 +33,9 @@ Open a command line or terminal and install Boto3 using pip (Python’s package 
 Your AWS credentials (Access Key ID and Secret Access Key) should be stored in a file at /home/ejev/.aws/credentials (assuming a Unix-like system). The file should look like this:
 
 [default]
+
 aws_access_key_id = YOUR_ACCESS_KEY_ID
+
 aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
 
 # 5. Write the Python Script:
@@ -48,9 +50,12 @@ Run the script by typing python list_public_ips.py.
 The script will generate CSV files with the list of public IPs for each AWS region.
 
 # Post-Setup Considerations
-#-Permissions: Make sure the AWS IAM user whose credentials you're using has sufficient permissions to list EC2 instances and Elastic IPs across all regions.
-#-Security: Handle your AWS credentials securely. Avoid exposing them in shared or insecure environments.
-#-(API Usage and Costs:) Be aware of the API call usage, as AWS may charge for excessive API usage depending on your account's billing plan.
+
+-Permissions: Make sure the AWS IAM user whose credentials you're using has sufficient permissions to list EC2 instances and Elastic IPs across all regions.
+
+-Security: Handle your AWS credentials securely. Avoid exposing them in shared or insecure environments.
+
+-API Usage and Costs: Be aware of the API call usage, as AWS may charge for excessive API usage depending on your account's billing plan.
 
 By following these steps, you should be able to successfully set up and run the script to list public IPs across all AWS accounts.
 
